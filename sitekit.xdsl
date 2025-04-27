@@ -1,0 +1,5 @@
+<?xdsl docType="SiteKitConfig" version="1.0"?>
+<SiteConfig>
+	<Name>SiteKit</Name>
+	<Properties null="false" />
+</SiteConfig>
