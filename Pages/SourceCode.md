@@ -1,0 +1,13 @@
+#! {{$Site.Name}} Source Code
+
+Access the complete source code on GitHub:
+<a href="https://github.com/RealtinSypher/SiteKitWebsite" target="_blank">SiteKitWebsite</a>
+
+## Local Build and Run Instructions
+
+```bash
+git clone https://github.com/RealtinSypher/SiteKitWebsite.git
+cd SiteKitWebsite
+sitekit build
+sitekit serve
+```
