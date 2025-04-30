@@ -18,22 +18,29 @@ header h1 {
 }
 
 nav {
-    background-color: #222222;
+    background-color: #10002e;
     overflow: hidden;
+    padding: 10px;
 }
 
 nav a {
     float: left;
     display: block;
     color: white;
+    background-color: rgb(56, 0, 121);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 15px 15px;
+    margin: 5px;
 }
 
 nav a:hover {
-    background-color: #4e0081cc;
-    color: black;
+    background-color: rgb(85, 0, 182);
+}
+
+nav a:active {
+    background-color: rgb(98, 0, 211);
 }
 
 .container {
@@ -53,6 +60,8 @@ footer {
     text-align: center;
     padding: 1.5rem 0;
     width: 100%;
+    bottom: 0;
+    position: fixed;
 }
 
 ul {
