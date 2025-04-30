@@ -1,4 +1,3 @@
-#! {{$Site.Name}}- Home
 # SiteKit  
 
 SiteKit is a command-line tool designed to simplify the creation, building, and serving of static websites. It provides a streamlined workflow for developers to quickly scaffold new projects, build static assets, and serve them locally for testing.  
@@ -25,7 +24,6 @@ cd ./SiteKit
 ./install.ps1 # For Windows
 ./install.sh # For Linux/MacOS
 ```
-
 ## Usage  
 
 ### Commands  
@@ -39,15 +37,31 @@ Create a new site project.
 Build the static site from source files.
 #### `serve`  
 Serve the site locally for testing.
-- `-u, --url`: (Optional) The URL to serve the site.  
+- `-u, --url`: (Optional) The URL to serve the site. Defaults to `http://localhost:9443/`.  
+- `-u, --url`: (Optional) The URL to serve the site. Defaults to `http://localhost:9443/`.  
 - `--no-build`: (Optional) Skip the build step before serving.  
 
 ## Project Structure  
 
 A typical SiteKit project has the following structure:
+```bash
+myBlog/
+├─ Pages/          # Your Markdown or HTML pages
+├─ wwwroot/        # CSS, images, JS, etc.
+├─ sitekit.json    # Site configuration (title, properties, etc.)
+└─ publish/        # Auto-generated static output
+```
+
 ## Configuration  
 
-The `sitekit.xdsl` file contains the configuration for your site. Example:
+The `sitekit.json` file contains the configuration for your site. Example:
+```json
+{
+  "Name": "SiteKit",
+  "Properties": {}
+}
+```
+
 ## Development  
 
 ### Building the Project  
@@ -62,20 +76,3 @@ To run the tests, use:
 ~~~bash
 sitekit serve
 ~~~
-## Contributing  
-
-Contributions are welcome! Please follow these steps:  
-
-1. Fork the repository.  
-2. Create a new branch for your feature or bug fix.  
-3. Commit your changes and push them to your fork.  
-4. Submit a pull request.  
-
-## License  
-
-This project is licensed under the GNU GENERAL PUBLIC License. See the `LICENSE` file for details.  
-
-## Acknowledgments  
-
-- [Cocona](https://github.com/mayuki/Cocona) for command-line parsing.  
-- [Markdig](https://github.com/xoofx/markdig) for Markdown processing.

@@ -7,9 +7,9 @@ body {
 }
 
 header {
-    background-image: linear-gradient(90deg, rgb(59, 0, 136) 0%,rgb(30, 0, 87) 70%);
+    background-image: linear-gradient(90deg, rgb(63, 0, 136) 0%, #210057 70%);
     color: white;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -32,13 +32,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #310081cc;
-    color: white;
-}
-
-nav a:active {
-    background-color: #3f00a5cc;
-    color: white;
+    background-color: #4e0081cc;
+    color: black;
 }
 
 .container {
@@ -56,10 +51,8 @@ footer {
     background-color: #414141;
     color: white;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
+    padding: 1.5rem 0;
     width: 100%;
-    bottom: 0;
 }
 
 ul {

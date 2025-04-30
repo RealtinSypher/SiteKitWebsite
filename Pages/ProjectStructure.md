@@ -26,6 +26,6 @@ To add a new page, simply create a file in the Pages folder. You can use either 
 ----
 
 
-## Overview of the sitekit.xdsl File
+## Overview of the sitekit.json File
 
-The `sitekit.xdsl` file contains metadata about your site, including user-defined properties. Xdsl (Extensible Data Structure Language) is a custom markup language developed by Realtin; in most cases, valid XML is also acceptable as Xdsl.
+The `sitekit.json` file contains metadata about your site, including user-defined properties.
